@@ -288,6 +288,26 @@ a {
 
 }
 
+
+.cont1 {
+    height: 1rem;
+    margin-right: 1.5rem;
+    opacity: 0.5;
+}
+
+.cont1:hover {
+    opacity: 1;
+}
+
+.cont2 {
+    height: 2rem;
+    margin-right: 1.5rem;
+}
+
+.cont2:hover {
+    transform: scale(1.1);
+}
+
 .music-name {
     font-size: 0.85rem;
 }
@@ -371,25 +391,42 @@ a {
     font-size: 0.7rem;
 }
 
-.cont1 {
-    height: 1rem;
-    margin-right: 1.5rem;
-    opacity: 0.5;
+@media(max-width:1000px) {
+    .left_column {
+        width: 70px;
+    }
+
+    .left_column a {
+        display: none;
+    }
+
+    .icons i {
+        display: none;
+    }
+
+    .library-box {
+        display: none;
+    }
+
+    .library-box {
+        height: 45px;
+    }
+
+    .vol {
+        display: none;
+    }
+
+    .volume {
+        margin-left: -100px;
+    }
 }
 
-.cont1:hover {
-    opacity: 1;
+@media(min-width:1000px) {
+    .left_column {
+        width: 265px;
+    }
+
+    .library-box {
+        flex: 1;
+    }
 }
-
-.cont2 {
-    height: 2rem;
-    margin-right: 1.5rem;
-}
-
-.cont2:hover {
-    transform: scale(1.1);
-}
-
-/* @media  {max-width: 768px; */
-
-/* } */
